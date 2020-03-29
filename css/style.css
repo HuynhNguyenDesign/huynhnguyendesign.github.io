@@ -108,6 +108,7 @@ a.btn {
 .jumbotron {
   background: #0056A4;
   border-radius: 0;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -129,6 +130,10 @@ a.btn {
   width: 50%;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+#featuredJobs {
+  padding-top: 2rem;
 }
 
 #featuredJobs h3 {
@@ -377,13 +382,11 @@ a.btn-more:hover {
 .newsCard {
   text-align: center;
   padding: 0.75rem 0;
+  border-radius: 1rem;
   margin: 1rem 0;
-  border: 5px solid rgba(0, 0, 0, 0);
-  border-bottom: 5px solid #003666;
+  border: 1px solid rgba(247, 247, 247, 1);
   transition: all 0.2s;
-  -webkit-box-shadow: 0px 5px 12px -6px rgba(0, 0, 0, 0.66);
-  -moz-box-shadow: 0px 5px 12px -6px rgba(0, 0, 0, 0.66);
-  box-shadow: 0px 5px 12px -6px rgba(0, 0, 0, 0.66);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px;
 }
 
 .newsCard {
@@ -391,13 +394,13 @@ a.btn-more:hover {
 }
 
 .newsCard .card-img-top {
-  border-radius: 0px;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .jobCard:hover,
 .newsCard:hover {
   border-color: #0179E5;
-  border-bottom-color: #0179E5;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
 }
 
 .jobCard .card-text {
@@ -413,6 +416,7 @@ a.btn-more:hover {
 .jobCard a,
 .newsCard a {
   display: block;
+  border-radius: 1rem;
   color: #fff;
   background-color: #003666;
   border: 2px solid #003666;
