@@ -398,3 +398,27 @@ footer section:last-child small {
     margin-right: auto;
   }
 }
+
+/* =====================================
+=========== Job Search Form ============
+======================================== */
+
+#job-search-form {
+  padding: 1.5rem 0;
+}
+
+#job-search-form h2 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 0.7rem;
+}
+
+#job-search-form form input#search-term,
+#job-search-form form select#search-city {
+  /* padding-bottom: 0.7rem; */
+  height: 52px;
+}
+
+#job-search-form form button {
+  width: 100%;
+}
