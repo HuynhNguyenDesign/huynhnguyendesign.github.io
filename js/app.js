@@ -7,7 +7,7 @@ var currentYear = (new Date).getFullYear();
 $(".copyyear").text(currentYear);
 
 $(".slideshow").slick({
-  autoplay: false,
+  autoplay: true,
   arrows: false,
   dots: true
 });
