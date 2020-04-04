@@ -109,6 +109,7 @@ i.fas {
   background-position: 0 90%;
 }
 
+/* ============ For MD Screen + ============= */
 @media (min-width: 768px) {
   .navbar .nav-item {
     padding: 0.5rem;
@@ -178,16 +179,20 @@ footer section:nth-child(2) address p {
   color: #fff;
 }
 
-footer section:nth-child(2) address i {
+/* footer section:nth-child(2) address i {
   display: inline;
   font-size: 0.8rem;
   padding-right: 0.5rem;
+} */
+
+footer section:nth-child(2) .sociallink {
+  display: inline-block;
+  padding-bottom: 1rem;
 }
 
 footer section:nth-child(2) .sociallink i.fab {
   font-size: 2rem;
   color: #fff;
-  display: inline-block;
   padding: 0 0.7rem;
 }
 
@@ -204,6 +209,7 @@ footer section:last-child small {
   color: grey;
 }
 
+/* ============ For MD Screen + ============= */
 @media(min-width:768px) {
   footer section:nth-child(2) {
     text-align: right;
@@ -230,6 +236,6 @@ footer section:last-child small {
   }
 }
 
-main {
+/* main {
   min-height: 70vh;
-}
+} */
