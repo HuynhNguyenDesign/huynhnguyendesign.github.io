@@ -5,3 +5,5 @@ $(".fas").click(function(){
 var currentYear = (new Date).getFullYear();
 
 $(".copyyear").text(currentYear);
+
+$(".slideshow").slick();
