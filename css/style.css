@@ -6,6 +6,7 @@ Primary color: #0056A4;
 Shade Lv1: #004685;
 Shade Lv2: #003666;
 Black: #202020;
+Lightgrey: #FAFAFA;
 */
 /* =============== Global Style =============== */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -251,6 +252,7 @@ footer section:last-child small {
 ======================================== */
 #home-carousel {
   background-color: #0056A4;
+  padding: 1.4rem 0;
 }
 
 #home-carousel .slideshow {
@@ -309,5 +311,90 @@ footer section:last-child small {
 
   #home-carousel .slide .slideimg img {
     border-radius: 99rem;
+  }
+}
+
+/* =====================================
+======= Featured Jobs Style ============
+======================================== */
+
+#featured-jobs {
+  background-color: #fafafa;
+  padding: 1.5rem 0;
+}
+
+#featured-jobs .container>a.btn {
+  display: block;
+  margin: 1.4rem 0 0.7rem 0;
+}
+
+#featured-jobs h2,
+#featured-jobs h4 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.7rem 0;
+}
+
+#featured-jobs .jobcard {
+  padding: 0.7rem;
+  margin: 0.7rem 0;
+  border-radius: 1rem;
+  border-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px;
+  transition: all 0.3s;
+}
+
+#featured-jobs .jobcard:hover,
+#featured-jobs .jobcard:active {
+  border-width: 2px;
+  border-color: #0179E5;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
+}
+
+#featured-jobs .jobcard .jobtitle {
+  padding-bottom: 0.7rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+#featured-jobs .jobcard .jobsummary {
+  text-align: center;
+  padding: 0.7rem 0;
+}
+
+#featured-jobs .jobcard .jobsalary {
+  text-align: center;
+  padding: 0.7rem 0 1.4rem 0;
+}
+
+#featured-jobs .jobcard .btn,
+#featured-jobs .jobcard .btn:visited {
+  /* background-color: #003666; */
+  color: #003666;
+  border-color: #003666;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  transition: all 0.3s;
+}
+
+#featured-jobs .jobcard .btn:hover,
+#fearured-jobs .jobcard .btn:active {
+  color: #fff;
+  background-color: #0179E5;
+  border-color: #0179E5;
+}
+
+/* ============ For MD Screen + ============= */
+@media(min-width: 768px) {
+  #featured-jobs h2,
+  #featured-jobs h4 {
+    text-align: left;
+  }
+
+  #featured-jobs .container>a.btn {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
