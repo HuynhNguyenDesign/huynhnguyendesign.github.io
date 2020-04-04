@@ -318,12 +318,14 @@ footer section:last-child small {
 ======= Featured Jobs Style ============
 ======================================== */
 
-#featured-jobs {
+#featured-jobs,
+#job-search-result {
   background-color: #fafafa;
   padding: 1.5rem 0;
 }
 
-#featured-jobs .container>a.btn {
+#featured-jobs .container>a.btn,
+#job-search-result .container>a.btn  {
   display: block;
   margin: 1.4rem 0 0.7rem 0;
 }
@@ -335,7 +337,8 @@ footer section:last-child small {
   padding: 0.7rem 0;
 }
 
-#featured-jobs .jobcard {
+#featured-jobs .jobcard,
+#job-search-result .jobcard {
   padding: 0.7rem;
   margin: 0.7rem 0;
   border-radius: 1rem;
@@ -345,30 +348,37 @@ footer section:last-child small {
 }
 
 #featured-jobs .jobcard:hover,
-#featured-jobs .jobcard:active {
+#featured-jobs .jobcard:active,
+#job-search-result .jobcard:hover,
+#job-search-result .jobcard:active {
   border-width: 2px;
   border-color: #0179E5;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
 }
 
-#featured-jobs .jobcard .jobtitle {
+#featured-jobs .jobcard .jobtitle,
+#job-search-result .jobcard .jobtitle {
   padding-bottom: 0.7rem;
   text-transform: capitalize;
   text-align: center;
 }
 
-#featured-jobs .jobcard .jobsummary {
+#featured-jobs .jobcard .jobsummary,
+#job-search-result .jobcard .jobsummary  {
   text-align: center;
   padding: 0.7rem 0;
 }
 
-#featured-jobs .jobcard .jobsalary {
+#featured-jobs .jobcard .jobsalary,
+#job-search-result .jobcard .jobsalary {
   text-align: center;
   padding: 0.7rem 0 1.4rem 0;
 }
 
 #featured-jobs .jobcard .btn,
-#featured-jobs .jobcard .btn:visited {
+#featured-jobs .jobcard .btn:visited,
+#job-search-result .jobcard .btn,
+#job-search-result .jobcard .btn:visited {
   /* background-color: #003666; */
   color: #003666;
   border-color: #003666;
@@ -379,7 +389,9 @@ footer section:last-child small {
 }
 
 #featured-jobs .jobcard .btn:hover,
-#fearured-jobs .jobcard .btn:active {
+#fearured-jobs .jobcard .btn:active,
+#job-search-result .jobcard .btn:hover,
+#job-search-result .jobcard .btn:active {
   color: #fff;
   background-color: #0179E5;
   border-color: #0179E5;
@@ -392,7 +404,8 @@ footer section:last-child small {
     text-align: left;
   }
 
-  #featured-jobs .container>a.btn {
+  #featured-jobs .container>a.btn,
+  #job-search-result .container>a.btn {
     width: 30%;
     margin-left: auto;
     margin-right: auto;
@@ -404,7 +417,7 @@ footer section:last-child small {
 ======================================== */
 
 #job-search-form {
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 0 0;
 }
 
 #job-search-form h2 {
@@ -413,12 +426,51 @@ footer section:last-child small {
   padding-bottom: 1.5rem;
 }
 
+#job-search-form hr {
+  margin-bottom: 0;
+}
+
 #job-search-form form input#search-term,
 #job-search-form form select#search-city {
   /* padding-bottom: 0.7rem; */
   height: 52px;
 }
 
+#job-search-form form div.form-check {
+  padding: 0;
+  margin-bottom: 6px;
+}
+
+#job-search-form form .form-check-input {
+  display: none;
+}
+
+#job-search-form form .form-check-label {
+  color: lightgrey;
+  padding: 0.3rem 0.7rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid lightgrey;
+  border-radius: 2rem;
+  transition: all 0.3s;
+}
+
+#job-search-form form .form-check-input:checked + label {
+  color: #fff;
+  background-color: #0179E5;
+  border-color: #0179E5;
+}
+
 #job-search-form form button {
   width: 100%;
+}
+
+/* ============ For MD Screen + ============= */
+@media(min-width: 768px) {
+  #job-search-form h2 {
+    text-align: left
+  }
+  #job-search-form hr {
+    margin: 0;
+  }
 }
