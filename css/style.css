@@ -423,7 +423,7 @@ footer section:last-child small {
 #job-search-form h2 {
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
 }
 
 #job-search-form hr {
