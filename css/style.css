@@ -473,4 +473,7 @@ footer section:last-child small {
   #job-search-form hr {
     margin: 0;
   }
+  #job-search-form form div.form-check {
+    padding-bottom: 1.4rem;
+  }
 }
