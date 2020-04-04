@@ -64,6 +64,56 @@ h5 {
   border-width: 2px;
 }
 
+.jobcard {
+  padding: 0.7rem;
+  margin: 0.7rem 0;
+  border-radius: 1rem;
+  border-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px;
+  transition: all 0.3s;
+}
+
+.jobcard:hover,
+.jobcard:active {
+  border-width: 2px;
+  border-color: #0179E5;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
+}
+
+.jobcard .jobtitle {
+  padding-bottom: 0.7rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.jobcard .jobsummary {
+  text-align: center;
+  padding: 0.7rem 0;
+}
+
+.jobcard .jobsalary {
+  text-align: center;
+  padding: 0.7rem 0 1.4rem 0;
+}
+
+.jobcard .btn,
+.jobcard .btn:visited {
+  /* background-color: #003666; */
+  color: #003666;
+  border-color: #003666;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  transition: all 0.3s;
+}
+
+.jobcard .btn:hover,
+.jobcard .btn:active {
+  color: #fff;
+  background-color: #0179E5;
+  border-color: #0179E5;
+}
+
 /* =====================================
 ===============Header Style=============
 ======================================== */
@@ -337,7 +387,7 @@ footer section:last-child small {
   padding: 0.7rem 0;
 }
 
-#featured-jobs .jobcard,
+/* #featured-jobs .jobcard,
 #job-search-result .jobcard {
   padding: 0.7rem;
   margin: 0.7rem 0;
@@ -345,57 +395,56 @@ footer section:last-child small {
   border-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px;
   transition: all 0.3s;
-}
+} */
 
-#featured-jobs .jobcard:hover,
+/* #featured-jobs .jobcard:hover,
 #featured-jobs .jobcard:active,
 #job-search-result .jobcard:hover,
 #job-search-result .jobcard:active {
   border-width: 2px;
   border-color: #0179E5;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
-}
+} */
 
-#featured-jobs .jobcard .jobtitle,
+/* #featured-jobs .jobcard .jobtitle,
 #job-search-result .jobcard .jobtitle {
   padding-bottom: 0.7rem;
   text-transform: capitalize;
   text-align: center;
-}
+} */
 
-#featured-jobs .jobcard .jobsummary,
+/* #featured-jobs .jobcard .jobsummary,
 #job-search-result .jobcard .jobsummary  {
   text-align: center;
   padding: 0.7rem 0;
-}
+} */
 
-#featured-jobs .jobcard .jobsalary,
+/* #featured-jobs .jobcard .jobsalary,
 #job-search-result .jobcard .jobsalary {
   text-align: center;
   padding: 0.7rem 0 1.4rem 0;
-}
+} */
 
-#featured-jobs .jobcard .btn,
+/* #featured-jobs .jobcard .btn,
 #featured-jobs .jobcard .btn:visited,
 #job-search-result .jobcard .btn,
 #job-search-result .jobcard .btn:visited {
-  /* background-color: #003666; */
   color: #003666;
   border-color: #003666;
   display: block;
   width: 80%;
   margin: 0 auto;
   transition: all 0.3s;
-}
+} */
 
-#featured-jobs .jobcard .btn:hover,
+/* #featured-jobs .jobcard .btn:hover,
 #fearured-jobs .jobcard .btn:active,
 #job-search-result .jobcard .btn:hover,
 #job-search-result .jobcard .btn:active {
   color: #fff;
   background-color: #0179E5;
   border-color: #0179E5;
-}
+} */
 
 /* ============ For MD Screen + ============= */
 @media(min-width: 768px) {
