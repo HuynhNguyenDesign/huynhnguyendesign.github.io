@@ -56,6 +56,13 @@ h5 {
   width: 80%;
 }
 
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.7rem 1.5rem;
+  border-width: 2px;
+}
+
 /* =====================================
 ===============Header Style=============
 ======================================== */
@@ -68,6 +75,10 @@ header {
 /* .navbar {
   padding: 0;
 } */
+
+.navbar {
+  padding: 0.5rem 0;
+}
 
 .navbar-brand img {
   width: 100px;
@@ -201,12 +212,11 @@ footer section:nth-child(2) .sociallink:hover i.fab {
 }
 
 footer section:last-child {
-  background-color: lightgrey;
   padding: 0.4rem 0;
 }
 
 footer section:last-child small {
-  color: grey;
+  color: lightgrey;
 }
 
 /* ============ For MD Screen + ============= */
@@ -236,12 +246,68 @@ footer section:last-child small {
   }
 }
 
-/* main {
-  min-height: 70vh;
-} */
+/* =====================================
+======= Home Carousel Style ============
+======================================== */
+#home-carousel {
+  background-color: #0056A4;
+}
 
-.slide {
-  width: 100%;
-  height: 150px;
-  background: grey;
+#home-carousel .slideshow {
+  padding: 1rem 0;
+}
+
+#home-carousel .slick-dots {
+  position: relative;
+  bottom: 0;
+  padding: 1rem 0 0 0;
+}
+
+#home-carousel .slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+#home-carousel .slide .slidetext {
+  text-align: center;
+}
+
+#home-carousel .slide .slidetext h2,
+#home-carousel .slide .slidetext p {
+  padding-bottom: 1rem;
+}
+
+#home-carousel .slide .slidetext h2 {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#home-carousel .slide .slidetext p {
+  color: #fff;
+}
+
+#home-carousel .slide .slideimg {
+  display: none;
+}
+
+/* ============ For MD Screen + ============= */
+@media(min-width: 768px) {
+
+  #home-carousel .slideshow .slide .row {
+    display: flex;
+    align-items: center;
+  }
+
+  #home-carousel .slide .slidetext {
+    text-align: left;
+  }
+
+  #home-carousel .slide .slideimg {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+
+  #home-carousel .slide .slideimg img {
+    border-radius: 99rem;
+  }
 }
