@@ -526,8 +526,16 @@ footer section:last-child small {
   background: #0056A4;
   padding: 0.75rem 1.5rem;
   border-radius: 1rem;
+  margin: 1.5rem;
 }
 
 #job-content .jobdesc {
   padding: 0.75rem 0;
+}
+
+/* ============ For MD Screen + ============= */
+@media (min-width: 768px) {
+  #job-content .jobsum {
+    margin : 0;
+  }
 }
