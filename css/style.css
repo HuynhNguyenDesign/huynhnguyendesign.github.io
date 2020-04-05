@@ -544,3 +544,35 @@ footer section:last-child small {
     margin : 0;
   }
 }
+
+/* =====================================
+=========== Job Apply Modal ============
+======================================== */
+#job-apply-modal abbr {
+  color:red;
+}
+
+.btn-upload {
+  border-color: 2px solid #0179E5;
+  color: #0179E5;
+  background-color: white;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.cv-wrapper:hover .btn-upload {
+  color: #fff;
+  background-color: #0179E5;
+}
+
+#job-apply-modal .cv-wrapper input[type=file]{
+  font-size: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+#job-apply-modal .cv-wrapper input[type=file]:hover .btn-upload {
+  background-color:red;
+}
