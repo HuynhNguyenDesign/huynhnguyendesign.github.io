@@ -1,13 +1,31 @@
-$("header.fas").click(function(){
-  $("header.fas").toggleClass("fa-bars fa-times");
-});
+$(document).ready(function(){
 
-var currentYear = (new Date).getFullYear();
+  $("header.fas").click(function(){
+    $("header.fas").toggleClass("fa-bars fa-times");
+  });
 
-$(".copyyear").text(currentYear);
+  var currentYear = (new Date).getFullYear();
 
-$(".slideshow").slick({
-  autoplay: true,
-  arrows: false,
-  dots: true
+  $(".copyyear").text(currentYear);
+
+  $(".slideshow").slick({
+    autoplay: true,
+    arrows: false,
+    dots: true
+  });
+
+  // $(".client-slide").slick({
+  //   autoplay: true,
+  //   slidesToShow: 6,
+  //   slidesToScroll: 1,
+  //   responsive: [
+  //   {
+  //     breakpoint: 768,
+  //     settings: {
+  //       slidesToShow: 2,
+  //       slidesToScroll: 1
+  //     }
+  //   }
+  // ]
+  });
 });

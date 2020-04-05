@@ -692,6 +692,35 @@ footer section:last-child small {
   margin-top: 0.75rem;
 }
 
+#our-team h5 {
+  color: #0179E5;
+  font-weight: 400;
+  margin-top: 0.325rem;
+}
+
+#our-team .container > .row {
+  padding-top: 0.75rem;
+}
+
 #our-team img {
   border-radius: 1rem;
 }
+
+/* ============ For MD Screen - ============= */
+@media (max-width: 768px) {
+  #our-team .container > .row {
+    padding-top: 0;
+  }
+
+  #our-team .container .row > div[class^="col"] {
+    padding-top: 1.5rem;
+  }
+
+  #our-team .container .row > div[class^="col"]:first-child {
+    padding-top: 0.75rem;
+  }
+}
+
+/* =====================================
+=========== Our Clients Style ==========
+======================================== */
