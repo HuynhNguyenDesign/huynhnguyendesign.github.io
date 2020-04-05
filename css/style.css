@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, address, p{
   padding: 0;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-weight:700;
   text-transform: uppercase;
 }
@@ -52,6 +52,10 @@ h5 {
   font-size: 1.25rem;
 }
 
+h6 {
+  font-size: 1rem;
+}
+
 /* =====================================
 ============= Layout Style =============
 ======================================== */
@@ -70,7 +74,8 @@ main > section#featured-jobs {
 main > section h2,
 main > section h3,
 main > section h4,
-main > section h5 {
+main > section h5,
+main > section h6 {
   text-align: center;
   padding-bottom: 0.75rem;
 }
@@ -594,6 +599,11 @@ footer section:last-child small {
   color: #0179E5;
   letter-spacing: 5px;
 }
+
+#article-content img {
+  padding: 0.75rem 0;
+}
+
 #article-nav .container .row div.col-6 a.btn span{
   display: none;
 }
@@ -614,4 +624,18 @@ footer section:last-child small {
   #article-nav .container .row div.col-6 a.btn span{
     display: inline;
   }
+}
+
+/* =====================================
+========= Specialization Style =========
+======================================== */
+#specialization h4 {
+  padding-bottom: 0;
+}
+
+#specialization .row img {
+  display: block;
+  border-radius: 50%;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
