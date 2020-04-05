@@ -671,6 +671,7 @@ footer section:last-child small {
   justify-content: center;
 }
 
-#why-choose-us .middle p:first-child {
-  line-height: 1;
+#why-choose-us p span {
+  font-size: 3rem;
+  vertical-align: super;
 }
