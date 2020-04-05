@@ -56,7 +56,15 @@ h5 {
 ============= Layout Style =============
 ======================================== */
 main > section {
-  padding: 1.5rem 0;
+  padding-bottom: 1.5rem;
+}
+
+main > section:first-child {
+ padding-top: 1.5rem;
+}
+
+main > section#featured-jobs {
+  padding-top: 1.5rem;
 }
 
 main > section h2,
