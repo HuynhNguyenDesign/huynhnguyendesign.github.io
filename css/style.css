@@ -576,3 +576,23 @@ footer section:last-child small {
 #job-apply-modal .cv-wrapper input[type=file]:hover .btn-upload {
   background-color:red;
 }
+
+/* =====================================
+=========== News Article Style =========
+======================================== */
+#article-nav .container .row div.col-6 a.btn span{
+  display: none;
+}
+#article-nav .container .row div.col-6:last-child a.btn {
+  align-self: flex-end;
+}
+/* ============ For MD Screen + ============= */
+@media (min-width: 768px) {
+  #article-nav .container .row div.col-6 a.btn i{
+    display: none;
+  }
+
+  #article-nav .container .row div.col-6 a.btn span{
+    display: inline;
+  }
+}
