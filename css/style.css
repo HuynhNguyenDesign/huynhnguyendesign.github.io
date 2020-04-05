@@ -27,7 +27,10 @@ h1, h2, h3, h4, h5, address, p{
   padding: 0;
 }
 
-h1, h2, h3, h4, h5 {font-weight:700}
+h1, h2, h3, h4, h5 {
+  font-weight:700;
+  text-transform: uppercase;
+}
 
 h1 {
   font-size: 3rem;
@@ -49,6 +52,32 @@ h5 {
   font-size: 1.25rem;
 }
 
+/* =====================================
+============= Layout Style =============
+======================================== */
+main > section {
+  padding: 1.5rem 0;
+}
+
+main > section h2,
+main > section h3,
+main > section h4 {
+  text-align: center;
+  padding-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  main > section h2,
+  main > section h3,
+  main > section h4 {
+    text-align: left
+  }
+}
+
+/* =====================================
+=========== Components Style ===========
+======================================== */
+
 .hidden {
   display: none;
 }
@@ -64,40 +93,80 @@ h5 {
   border-width: 2px;
 }
 
-.jobcard {
-  padding: 0.7rem;
-  margin: 0.7rem 0;
+.jobcard, .newscard {
+  padding: 0.75rem;
+  margin: 0.75rem 0;
+  border-width: 2px;
   border-radius: 1rem;
   border-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px;
   transition: all 0.3s;
 }
 
+.newscard {
+  padding: 0 0 0.75rem 0;
+}
+
+.newscard .newsimg {
+  border-radius: 0.85rem 0.85rem 0 0 ;
+}
+
 .jobcard:hover,
-.jobcard:active {
-  border-width: 2px;
+.jobcard:active,
+.newscard:hover,
+.newscard:active {
   border-color: #0179E5;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
 }
 
-.jobcard .jobtitle {
-  padding-bottom: 0.7rem;
+.jobccard .card-body,
+.newscard .card-body, {
+  padding: 1.5rem;
+}
+
+.newscard .card-body {
+  padding-top: 0;
+}
+
+.jobcard .jobtitle,
+.newscard .newstitle {
+  padding-bottom: 1.5rem;
   text-transform: capitalize;
   text-align: center;
 }
 
-.jobcard .jobsummary {
+.newscard .newstitle {
+  padding-bottom: 0;
+  padding-top: 1.5rem;
+}
+
+.newscard .newsdate {
+  color: #0179E5;
   text-align: center;
-  padding: 0.7rem 0;
+  letter-spacing: 5px;
+  padding-bottom: 1.5rem;
+}
+
+.jobcard hr,
+.newscard hr {
+  margin: 0;
+}
+
+.jobcard .jobsummary,
+.newscard .newssummary {
+  text-align: center;
+  padding: 1.5rem 0 0.75rem 0;
 }
 
 .jobcard .jobsalary {
   text-align: center;
-  padding: 0.7rem 0 1.4rem 0;
+  padding: 0.75rem 0 1.5rem 0;
 }
 
 .jobcard .btn,
-.jobcard .btn:visited {
+.jobcard .btn:visited,
+.newscard .btn,
+.newscard .btn:visited {
   /* background-color: #003666; */
   color: #003666;
   border-color: #003666;
@@ -108,10 +177,34 @@ h5 {
 }
 
 .jobcard .btn:hover,
-.jobcard .btn:active {
+.jobcard .btn:active,
+.newscard .btn:hover,
+.newscard .btn:active{
   color: #fff;
   background-color: #0179E5;
   border-color: #0179E5;
+}
+
+.newscard .btn {
+  margin-top: 1.5rem;
+}
+
+.btn-more,
+.btn-apply  {
+  display: block;
+  margin-top: 0.75rem;
+}
+
+.btn-apply {
+  width: 100%;
+}
+
+@media (min-width:768px) {
+  .btn-more {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* =====================================
@@ -302,7 +395,6 @@ footer section:last-child small {
 ======================================== */
 #home-carousel {
   background-color: #0056A4;
-  padding: 1.4rem 0;
 }
 
 #home-carousel .slideshow {
@@ -369,116 +461,14 @@ footer section:last-child small {
 ======================================== */
 
 #featured-jobs,
-#job-search-result {
+#job-search-result,
+#news-board {
   background-color: #fafafa;
-  padding: 1.5rem 0;
-}
-
-#featured-jobs .container>a.btn,
-#job-search-result .container>a.btn  {
-  display: block;
-  margin: 1.4rem 0 0.7rem 0;
-}
-
-#featured-jobs h2,
-#featured-jobs h4 {
-  text-align: center;
-  text-transform: uppercase;
-  padding: 0.7rem 0;
-}
-
-/* #featured-jobs .jobcard,
-#job-search-result .jobcard {
-  padding: 0.7rem;
-  margin: 0.7rem 0;
-  border-radius: 1rem;
-  border-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px;
-  transition: all 0.3s;
-} */
-
-/* #featured-jobs .jobcard:hover,
-#featured-jobs .jobcard:active,
-#job-search-result .jobcard:hover,
-#job-search-result .jobcard:active {
-  border-width: 2px;
-  border-color: #0179E5;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
-} */
-
-/* #featured-jobs .jobcard .jobtitle,
-#job-search-result .jobcard .jobtitle {
-  padding-bottom: 0.7rem;
-  text-transform: capitalize;
-  text-align: center;
-} */
-
-/* #featured-jobs .jobcard .jobsummary,
-#job-search-result .jobcard .jobsummary  {
-  text-align: center;
-  padding: 0.7rem 0;
-} */
-
-/* #featured-jobs .jobcard .jobsalary,
-#job-search-result .jobcard .jobsalary {
-  text-align: center;
-  padding: 0.7rem 0 1.4rem 0;
-} */
-
-/* #featured-jobs .jobcard .btn,
-#featured-jobs .jobcard .btn:visited,
-#job-search-result .jobcard .btn,
-#job-search-result .jobcard .btn:visited {
-  color: #003666;
-  border-color: #003666;
-  display: block;
-  width: 80%;
-  margin: 0 auto;
-  transition: all 0.3s;
-} */
-
-/* #featured-jobs .jobcard .btn:hover,
-#fearured-jobs .jobcard .btn:active,
-#job-search-result .jobcard .btn:hover,
-#job-search-result .jobcard .btn:active {
-  color: #fff;
-  background-color: #0179E5;
-  border-color: #0179E5;
-} */
-
-/* ============ For MD Screen + ============= */
-@media(min-width: 768px) {
-  #featured-jobs h2,
-  #featured-jobs h4 {
-    text-align: left;
-  }
-
-  #featured-jobs .container>a.btn,
-  #job-search-result .container>a.btn {
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 /* =====================================
 =========== Job Search Form ============
 ======================================== */
-
-#job-search-form {
-  padding: 1.5rem 0 0 0;
-}
-
-#job-search-form h2 {
-  text-align: center;
-  text-transform: uppercase;
-  padding-bottom: 0.75rem;
-}
-
-#job-search-form hr {
-  margin-bottom: 0;
-}
-
 #job-search-form form input#search-term,
 #job-search-form form select#search-city {
   /* padding-bottom: 0.7rem; */
@@ -486,8 +476,8 @@ footer section:last-child small {
 }
 
 #job-search-form form div.form-check {
-  padding: 0;
-  margin-bottom: 6px;
+  padding-left: 0;
+  padding-bottom: 0.5rem;
 }
 
 #job-search-form form .form-check-input {
@@ -514,15 +504,30 @@ footer section:last-child small {
   width: 100%;
 }
 
+#job-search-form + hr,
+#news-page + hr {
+  width: 78%;
+  margin: 0 auto;
+}
+
 /* ============ For MD Screen + ============= */
-@media(min-width: 768px) {
-  #job-search-form h2 {
-    text-align: left
-  }
-  #job-search-form hr {
-    margin: 0;
-  }
+@media (min-width: 768px) {
   #job-search-form form div.form-check {
-    padding-bottom: 1.4rem;
+    padding: 0;
+    padding-top: 0.5rem;
   }
+}
+
+/* =====================================
+============ Job Page Style ============
+======================================== */
+#job-content .jobsum {
+  color: #fff;
+  background: #0056A4;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+}
+
+#job-content .jobdesc {
+  padding: 0.75rem;
 }
