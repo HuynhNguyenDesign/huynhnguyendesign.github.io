@@ -665,8 +665,12 @@ footer section:last-child small {
   font-size: 1.25rem;
 }
 
-#why-choose-us .container .row div[class^=col]:nth-child(2) {
+#why-choose-us .middle {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#why-choose-us .middle p:first-child {
+  line-height: 1;
 }
