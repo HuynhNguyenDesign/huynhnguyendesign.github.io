@@ -573,9 +573,9 @@ footer section:last-child small {
   opacity: 0;
 }
 
-#job-apply-modal .cv-wrapper input[type=file]:hover .btn-upload {
+/* #job-apply-modal .cv-wrapper input[type=file]:hover .btn-upload {
   background-color:red;
-}
+} */
 
 /* =====================================
 =========== News Article Style =========
@@ -583,8 +583,13 @@ footer section:last-child small {
 #article-nav .container .row div.col-6 a.btn span{
   display: none;
 }
+
+#article-nav .container .row div.col-6 {
+  display: flex;
+}
+
 #article-nav .container .row div.col-6:last-child a.btn {
-  align-self: flex-end;
+  margin-left: auto;
 }
 /* ============ For MD Screen + ============= */
 @media (min-width: 768px) {
