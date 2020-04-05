@@ -61,7 +61,8 @@ main > section {
 
 main > section h2,
 main > section h3,
-main > section h4 {
+main > section h4,
+main > section h5 {
   text-align: center;
   padding-bottom: 0.75rem;
 }
@@ -69,7 +70,8 @@ main > section h4 {
 @media (min-width: 768px) {
   main > section h2,
   main > section h3,
-  main > section h4 {
+  main > section h4,
+  main > section h5 {
     text-align: left
   }
 }
