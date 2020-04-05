@@ -635,7 +635,38 @@ footer section:last-child small {
 
 #specialization .row img {
   display: block;
+  width: 80%;
   border-radius: 50%;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  margin: 0 auto;
+}
+
+/* =====================================
+========== Why Choose Us Style =========
+======================================== */
+#why-choose-us {
+  color: #fff;
+  background: #0056A4;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+#why-choose-us .container .row div[class^=col] p {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#why-choose-us .container .row div[class^=col] p:first-child {
+  font-size: 5.5rem;
+}
+
+#why-choose-us .container .row div[class^=col] p:last-child {
+  font-size: 1.25rem;
+}
+
+#why-choose-us .container .row div[class^=col]:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
