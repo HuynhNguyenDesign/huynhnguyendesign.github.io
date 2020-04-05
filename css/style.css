@@ -650,6 +650,7 @@ footer section:last-child small {
   background: #0056A4;
   text-align: center;
   padding-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 #why-choose-us .container .row div[class^=col] p {
@@ -674,4 +675,23 @@ footer section:last-child small {
 #why-choose-us p span {
   font-size: 3rem;
   vertical-align: super;
+}
+
+/* =====================================
+============ Our Team Style ============
+======================================== */
+#our-team h4,
+#our-team h5 {
+  /* padding-top: 1.25rem; */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#our-team h4 {
+  margin-top: 0.75rem;
+}
+
+#our-team img {
+  border-radius: 1rem;
 }
