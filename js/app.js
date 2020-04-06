@@ -29,4 +29,15 @@ $(document).ready(function(){
   ]
 }); //End of Client Slide
 
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
+
 }); // End of doc.ready
