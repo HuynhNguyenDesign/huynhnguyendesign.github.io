@@ -14,18 +14,10 @@ $(document).ready(function(){
     dots: true
   });
 
-  // $(".client-slide").slick({
-  //   autoplay: true,
-  //   slidesToShow: 6,
-  //   slidesToScroll: 1,
-  //   responsive: [
-  //   {
-  //     breakpoint: 768,
-  //     settings: {
-  //       slidesToShow: 2,
-  //       slidesToScroll: 1
-  //     }
-  //   }
-  // ]
+  $(".client-slide").slick({
+    autoplay: true,
+    arrows: false,
+    slidesToShow: 6
   });
-});
+
+}); // End of doc.ready
