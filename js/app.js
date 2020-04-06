@@ -14,10 +14,19 @@ $(document).ready(function(){
     dots: true
   });
 
+  // Start of Client Slide
   $(".client-slide").slick({
     autoplay: true,
     arrows: false,
-    slidesToShow: 6
-  });
+    slidesToShow: 6,
+    responsive: [ {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }
+  ]
+}); //End of Client Slide
 
 }); // End of doc.ready
