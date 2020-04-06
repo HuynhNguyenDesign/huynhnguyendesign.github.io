@@ -273,7 +273,7 @@ form label[class="form-check-label"] {
 ========= Specialization Style =========
 ======================================== */
 #specialization h4 {
-  padding-bottom: 0;
+  padding: 1.5rem 0;
 }
 
 #specialization .row img {
