@@ -49,10 +49,11 @@
     <!-- Start of About Us -->
     <section id="about-us">
       <div class="container">
-        <h2>About Us</h2>
+        <h2><span class="underline">About Us</span></h2>
         <div class="row">
           <div class="col-12">
-            <p>Pegasi was founded in 2018, we are focusing on recruiting and providing talents to our clients in the professional Information Technology Market in Vietnam. We deliver the consistency and reliable services so that PEGASI is well recruited to assist clients in business and consult candidates in career path. We communicate to understand the expectation of our clients and candidates to save time in having RIGHT talents and finding SUITABLE positions.</p>
+            <p>Pegasi was founded in 2018, we are focusing on recruiting and providing talents to our clients in the professional Information Technology Market in Vietnam. We deliver the consistency and reliable services so that PEGASI is well recruited
+              to assist clients in business and consult candidates in career path. We communicate to understand the expectation of our clients and candidates to save time in having RIGHT talents and finding SUITABLE positions.</p>
           </div>
         </div>
       </div>
@@ -62,10 +63,10 @@
     <!-- Start of Specialization -->
     <section id="specialization">
       <div class="container">
-        <h2>We are specialized in</h2>
+        <h2><span class="underline">We are specialized in</span></h2>
         <div class="row">
           <div class="col-12 col-md-8">
-            <h4>tech</h4>
+            <h4><span class="underline">tech</span></h4>
             <div class="row">
               <div class="col-6 col-md-3">
                 <img src="https://via.placeholder.com/300.png/0056A4/FFFFFF?text=PEGASI" class="img-fluid" alt="photo">
@@ -110,7 +111,7 @@
             </div>
           </div>
           <div class="col-12 col-md-4">
-            <h4>Non-tech</h4>
+            <h4><span class="underline">Non-tech</span></h4>
             <div class="row">
               <div class="col-6">
                 <img src="https://via.placeholder.com/300.png/0B8AFC/FFFFFF?text=PEGASI" class="img-fluid" alt="photo">
@@ -158,9 +159,9 @@
           </div>
           <div class="col-12 col-md-4 middle">
             <div>
-            <p>14000<span>++</span></p>
-            <p>senior IT talents</p>
-          </div>
+              <p>14000<span>++</span></p>
+              <p>senior IT talents</p>
+            </div>
           </div>
           <div class="col-12 col-md-4">
             <div class="row">
@@ -182,7 +183,7 @@
     <!-- Start of Our Team -->
     <section id="our-team">
       <div class="container">
-        <h2>Our team</h2>
+        <h2><span class="underline">Our team</span></h2>
         <div class="row">
           <div class="col-12 col-md-3">
             <img src="https://via.placeholder.com/500.png?text=PEGASI" class="img-fluid" alt="photo">
@@ -260,6 +261,74 @@
     <!-- End of Our Clients -->
 
     <!-- Start of Contact Us -->
+    <section id="contactForm">
+      <div class="container">
+        <h2><span class="underline">Leave us a message</span></h2>
+        <small>Fields that are mark with <strong><abbr title="required">*</abbr></strong> are required informations.</small>
+        <form action="#">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="form-group">
+                <label for="name">Name <strong><abbr title="required">*</abbr></strong></label>
+                <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-group">
+                <label for="email">Email <strong><abbr title="required">*</abbr></strong></label>
+                <input type="email" id="email" class="form-control" placeholder="john.doe@mail.com" required>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-group">
+                <label for="phone">Phone <strong><abbr title="required">*</abbr></strong></label>
+                <input type="tel" id="phone" class="form-control" placeholder="+28-999-9999" required>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-group">
+                <label for="company">Company</label>
+                <input type="company" id="company" class="form-control" placeholder="John Doe.Inc">
+              </div>
+            </div>
+            <div class="col-12">
+              <p><b>What are you looking for?</b></p>
+              <!-- Start of One Radio Box -->
+              <div class="form-check pt-2">
+                <input class="form-check-input" type="radio" name="looking-for" id="new-job" value="new-job" checked>
+                <label class="form-check-label" for="new-job">
+                  New Job Opportunity
+                </label>
+              </div>
+              <!-- End of One Radio Box -->
+              <!-- Start of One Radio Box -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="looking-for" id="new-worker" value="new-worker">
+                <label class="form-check-label" for="new-worker">
+                  Recruitment Service
+                </label>
+              </div>
+              <!-- End of One Radio Box -->
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label for="msg">Your message</label>
+                <textarea class="form-control" id="msg" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-group cv-wrapper">
+                <button class="btn btn-outline-primary btn-apply btn-upload">Upload your CV or JD</button>
+                <input type="file" name="cv">
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <button type="submit" class="btn btn-success btn-apply">apply</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
     <!-- End of Contact Us -->
   </main>
   <!-- End of Website Main body -->

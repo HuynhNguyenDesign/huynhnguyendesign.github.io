@@ -59,15 +59,25 @@ h6 {
 ============= Layout Style =============
 ======================================== */
 main > section {
-  padding-bottom: 1.5rem;
+  padding-bottom: 2.5rem;
 }
 
 main > section:first-child {
- padding-top: 1.5rem;
+ padding-top: 2.5rem;
 }
 
 main > section#featured-jobs {
-  padding-top: 1.5rem;
+  padding-top: 2.5rem;
+}
+
+main > section#why-choose-us {
+  padding-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+main > section#our-client {
+  padding-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 main > section h2,
@@ -210,6 +220,13 @@ main > section h6 {
 
 .btn-apply {
   width: 100%;
+}
+
+.underline {
+  background-image: linear-gradient(120deg, #0B8AFC 10%, #0179E5 100%);
+ background-repeat: no-repeat;
+ background-size: 100% 0.3em;
+ background-position: 0 88%;
 }
 
 @media (min-width:768px) {
@@ -487,16 +504,38 @@ footer section:last-child small {
   height: 52px;
 }
 
-#job-search-form form div.form-check {
+/* #job-search-form form div.form-check,
+#contact-form form div.form-check {
+  padding-left: 0;
+  padding-bottom: 0.5rem;
+} */
+
+form div.form-check {
+  display: inline-block;
   padding-left: 0;
   padding-bottom: 0.5rem;
 }
 
-#job-search-form form .form-check-input {
+/* #job-search-form form .form-check-input,
+#contact-form form .form-check-input {
+  display: none;
+} */
+
+form .form-check-input {
   display: none;
 }
 
-#job-search-form form .form-check-label {
+/* #job-search-form form .form-check-label {
+  color: lightgrey;
+  padding: 0.3rem 0.7rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid lightgrey;
+  border-radius: 2rem;
+  transition: all 0.3s;
+} */
+
+form .form-check-label {
   color: lightgrey;
   padding: 0.3rem 0.7rem;
   margin-right: 0.5rem;
@@ -506,7 +545,13 @@ footer section:last-child small {
   transition: all 0.3s;
 }
 
-#job-search-form form .form-check-input:checked + label {
+/* #job-search-form form .form-check-input:checked + label {
+  color: #fff;
+  background-color: #0179E5;
+  border-color: #0179E5;
+} */
+
+form .form-check-input:checked + label {
   color: #fff;
   background-color: #0179E5;
   border-color: #0179E5;
@@ -524,7 +569,7 @@ footer section:last-child small {
 
 /* ============ For MD Screen + ============= */
 @media (min-width: 768px) {
-  #job-search-form form div.form-check {
+  form div.form-check {
     padding: 0;
     padding-top: 0.5rem;
   }
@@ -560,8 +605,20 @@ footer section:last-child small {
 /* =====================================
 =========== Job Apply Modal ============
 ======================================== */
-#job-apply-modal abbr {
+/* #job-apply-modal abbr {
   color:red;
+} */
+
+abbr {
+  color:red;
+}
+
+form label {
+  font-weight: 700;
+}
+
+form label[class="form-check-label"] {
+  font-weight: 400;
 }
 
 .btn-upload {
@@ -577,7 +634,15 @@ footer section:last-child small {
   background-color: #0179E5;
 }
 
-#job-apply-modal .cv-wrapper input[type=file]{
+/* #job-apply-modal .cv-wrapper input[type=file]{
+  font-size: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+} */
+
+.cv-wrapper input[type=file]{
   font-size: 50px;
   position: absolute;
   top: 0;
@@ -646,8 +711,6 @@ footer section:last-child small {
   color: #fff;
   background: #0056A4;
   text-align: center;
-  padding-top: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 
 #why-choose-us .container .row div[class^=col] p {
@@ -723,8 +786,7 @@ footer section:last-child small {
 ======================================== */
 #our-client {
   background: lightgrey;
-  padding-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  overflow-x: hidden;
 }
 
 #our-client .client-slide .slide {
@@ -734,4 +796,5 @@ footer section:last-child small {
 #our-client .client-slide .slide img {
   width: 80%;
   margin: 0 auto;
+  border-radius: 1rem;
 }

@@ -123,6 +123,13 @@
   width: 100%;
 }
 
+.underline {
+  background-image: linear-gradient(120deg, #0B8AFC 10%, #0179E5 100%);
+ background-repeat: no-repeat;
+ background-size: 100% 0.3em;
+ background-position: 0 88%;
+}
+
 @media (min-width:768px) {
   .btn-more {
     width: 30%;
