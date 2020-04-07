@@ -27,6 +27,6 @@ $(".client-slide").slick({
 }); //End of Client Slide
 
 $('.num').counterUp({
-  delay: 10,
+  delay:10,
   time: 1500
 });
