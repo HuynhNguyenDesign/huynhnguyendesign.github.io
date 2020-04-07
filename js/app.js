@@ -28,5 +28,7 @@ $(".client-slide").slick({
 
 $('.num').counterUp({
   delay:10,
-  time: 1500
+  time: 1500,
+  offset: 70,
+  beginAt: 0
 });
