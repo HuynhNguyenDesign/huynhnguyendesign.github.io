@@ -718,7 +718,7 @@ form label[class="form-check-label"] {
   text-transform: uppercase;
 }
 
-#why-choose-us .container .row div[class^=col] p:first-child {
+#why-choose-us .container .row div[class^=col] p:first-child span.num {
   font-size: 5.5rem;
 }
 
