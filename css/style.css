@@ -474,8 +474,11 @@ footer section:last-child small {
   padding-bottom: 1.5rem;
 }
 
+#home-carousel .slidetext a {
+  margin: 0 auto;
+}
+
 #home-carousel .slideshow img {
-  display: block;
   border-radius: 99rem;
 }
 
