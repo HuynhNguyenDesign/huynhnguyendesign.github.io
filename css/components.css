@@ -27,6 +27,19 @@
   transition: all 0.3s;
 }
 
+.jobcard .skill {
+  padding: 0;
+  padding-top: 1.5rem;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.jobcard .skill li {
+  display: inline;
+  margin: 0 0.325rem;
+}
+
 .newscard {
   padding: 0 0 0.75rem 0;
 }

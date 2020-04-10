@@ -7,6 +7,7 @@ Shade Lv1: #004685;
 Shade Lv2: #003666;
 Black: #202020;
 Lightgrey: #FAFAFA;
+DarkGrey : #444444;
 */
 /* =============== Global Style =============== */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -19,6 +20,7 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  color: #444444;
   overflow-x: hidden;
 }
 
@@ -54,6 +56,24 @@ h5 {
 
 h6 {
   font-size: 1rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  margin: 0.325rem 0;
+}
+
+@media (min-width: 768px) {
+  ul {
+    margin: 0;
+    padding-left: 1rem;
+    list-style: initial;
+  }
 }
 /* =====================================
 ============= Layout Style =============
@@ -124,6 +144,19 @@ main > section h6 {
   border-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px;
   transition: all 0.3s;
+}
+
+.jobcard .skill {
+  padding: 0;
+  padding-top: 1.5rem;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.jobcard .skill li {
+  display: inline;
+  margin: 0 0.325rem;
 }
 
 .newscard {
@@ -426,62 +459,41 @@ footer section:last-child small {
   background-color: #0056A4;
 }
 
-#home-carousel .slideshow {
+/* #home-carousel .slideshow {
   padding: 1rem 0;
-}
+} */
 
-#home-carousel .slick-dots {
-  position: relative;
-  bottom: 0;
-  padding: 1rem 0 0 0;
-}
-
-#home-carousel .slick-dotted.slick-slider {
-  margin-bottom: 0;
-}
-
-#home-carousel .slide .slidetext {
+#home-carousel .slidetext {
+  display: block;
+  color: #fff;
   text-align: center;
 }
 
-#home-carousel .slide .slidetext h2,
-#home-carousel .slide .slidetext p {
-  padding-bottom: 1rem;
+#home-carousel .slidetext h2,
+#home-carousel .slidetext p {
+  padding-bottom: 1.5rem;
 }
 
-#home-carousel .slide .slidetext h2 {
-  text-transform: uppercase;
-  color: #fff;
+#home-carousel .slideshow img {
+  display: block;
+  border-radius: 99rem;
 }
 
-#home-carousel .slide .slidetext p {
-  color: #fff;
-}
-
-#home-carousel .slide .slideimg {
+#home-carousel  .slideshow {
   display: none;
 }
 
 /* ============ For MD Screen + ============= */
 @media(min-width: 768px) {
 
-  #home-carousel .slideshow .slide .row {
-    display: flex;
-    align-items: center;
-  }
-
-  #home-carousel .slide .slidetext {
+  #home-carousel .slidetext {
     text-align: left;
   }
 
-  #home-carousel .slide .slideimg {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-  }
-
-  #home-carousel .slide .slideimg img {
-    border-radius: 99rem;
+  #home-carousel .slideshow {
+    display: block;
+    width: 90%;
+    height: auto;
   }
 }
 
@@ -583,7 +595,7 @@ form .form-check-input:checked + label {
   background: #0056A4;
   padding: 0.75rem 1.5rem;
   border-radius: 1rem;
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 3rem 0;
 }
 
 #job-content .jobdesc {

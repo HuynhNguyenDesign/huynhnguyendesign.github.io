@@ -10,8 +10,6 @@
   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   <!-- Slick Theme -->
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/b0be376bb4.js" crossorigin="anonymous"></script>
   <!-- Main CSS file -->
   <link rel="stylesheet" href="./css/style.css">
   <meta name="viewport" content="width=device-width initial-scale=1.0">
@@ -33,6 +31,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="mainNav">
           <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link active" href="index.html">Homepage</a></li>
+            <li class="nav-item"><a class="nav-link" href="index2.html">Homepage 2</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
             <li class="nav-item"><a class="nav-link" href="jobs.html">Jobs Board</a></li>
             <li class="nav-item"><a class="nav-link" href="news.html">Industry News</a></li>
@@ -46,71 +45,37 @@
   <!-- Website Main Body -->
   <main>
 
-    <!-- Start of Slideshow -->
+    <!-- Start of Banner -->
     <section id="home-carousel">
       <div class="container">
-        <div class="slideshow">
-          <!-- Start of One Slide -->
-          <div class="slide">
-            <div class="row">
-              <div class="col-12 col-md-5 slidetext">
-                <h2>it recruitment at its best</h2>
-                <p>Pegasi was founded in 2018, we are focusing on recruiting and providing talents to our clients in the professional Information Technology Market in Vietnam. We deliver the consistency and reliable services so that PEGASI is well recruited
-                  to assist clients in business and consult candidates in career path</p>
-                <a href="about.html" class="btn btn-outline-light">learn more</a>
+        <div class="row">
+          <div class="col col-12 col-md-5 d-flex justify-content-center align-items-center">
+            <div class="slidetext">
+              <h2><span class="ghost"><span></h2>
+              <p>Pegasi is a boutique recruitment agency that thrive in IT recruitment. We try our best to save time for our clients by deeply understanding about their requirements so we can provide the best talents for them.</p>
+              <a href="about.html" class="btn btn-outline-light">Learn more</a>
+            </div>
+          </div>
+          <div class="col col-12 col-md-7 d-flex justify-content-center align-items-center">
+            <div class="slideshow">
+              <div>
+                <img class="img-fluid" src="https://placeimg.com/600/600/any/grayscale" alt="placeholder">
               </div>
-              <div class="col-12 col-md-6 offset-1 slideimg">
-                <img src="https://placeimg.com/470/470/tech/grayscale" alt="Placeholder Image">
+              <div>
+                <img class="img-fluid" src="https://placeimg.com/600/600/tech/grayscale" alt="placeholder">
+              </div>
+              <div>
+                <img class="img-fluid" src="https://placeimg.com/600/600/nature/grayscale" alt="placeholder">
+              </div>
+              <div>
+                <img class="img-fluid" src="https://placeimg.com/600/600/people/grayscale" alt="placeholder">
               </div>
             </div>
           </div>
-          <!-- End of One Slide -->
-          <!-- Start of One Slide -->
-          <div class="slide">
-            <div class="row">
-              <div class="col-12 col-md-5 slidetext">
-                <h2>Slide No.2 header</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit eum eligendi minima sapiente quasi atque deserunt, reprehenderit, iusto ipsum! Natus in quos temporibus, minima saepe eum, neque ab consequuntur debitis.</p>
-                <a href="about.html" class="btn btn-outline-light">learn more</a>
-              </div>
-              <div class="col-12 col-md-6 offset-1 slideimg">
-                <img src="https://placeimg.com/470/470/tech/grayscale" alt="Placeholder Image">
-              </div>
-            </div>
-          </div>
-          <!-- End of One Slide -->
-          <!-- Start of One Slide -->
-          <div class="slide">
-            <div class="row">
-              <div class="col-12 col-md-5 slidetext">
-                <h2>slide n0.3 header</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quas culpa explicabo sint incidunt perspiciatis illum quod sapiente aperiam recusandae facilis non odit nihil, nisi soluta ullam placeat illo. Ea!</p>
-                <a href="about.html" class="btn btn-outline-light">learn more</a>
-              </div>
-              <div class="col-12 col-md-6 offset-1 slideimg">
-                <img src="https://placeimg.com/470/470/tech/grayscale" alt="Placeholder Image">
-              </div>
-            </div>
-          </div>
-          <!-- End of One Slide -->
-          <!-- Start of One Slide -->
-          <div class="slide">
-            <div class="row">
-              <div class="col-12 col-md-5 slidetext">
-                <h2>slide no.4 header</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis in, similique animi doloremque rem. Iste recusandae beatae pariatur labore sed maxime, nobis, amet asperiores doloremque quisquam autem voluptates adipisci veniam?</p>
-                <a href="about.html" class="btn btn-outline-light">learn more</a>
-              </div>
-              <div class="col-12 col-md-6 offset-1 slideimg">
-                <img src="https://placeimg.com/470/470/tech/grayscale" alt="Placeholder Image">
-              </div>
-            </div>
-          </div>
-          <!-- End of One Slide -->
         </div>
       </div>
     </section>
-    <!-- End of Slideshow -->
+    <!-- End of Banner -->
 
     <!-- Start of Featured Job -->
     <section id="featured-jobs">
@@ -123,10 +88,17 @@
           <div class="col-12 col-md-4">
             <div class="card jobcard">
               <div class="card-body">
-                <h4 class="jobtitle">Java Developer</h4>
+                <h4 class="jobtitle">Technical Architect</h4>
                 <hr>
-                <p class="jobsummary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil cupiditate mollitia quasi expedita iste modi hic tempora accusamus earum quisquam quis nulla, recusandae obcaecati provident repudiandae beatae? Nobis, officiis, odio.</p>
-                <h3 class="jobsalary">$850 - $2000</h3>
+                  <ul class="skill">
+                    <li>Objective-C</li>
+                    <li>Swift</li>
+                    <li>Golang</li>
+                    <li>NodeJS</li>
+                    <li>PHP</li>
+                  </ul>
+                <p class="jobsummary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil cupiditate mollitia quasi expedita iste modi hic tempora accusamus earum quisquam quis nulla.</p>
+                <h3 class="jobsalary">negotiable</h3>
                 <a href="job-detail.html" class="btn btn-outline-primary">View detail</a>
               </div>
             </div>
@@ -137,10 +109,17 @@
           <div class="col-12 col-md-4">
             <div class="card jobcard">
               <div class="card-body">
-                <h4 class="jobtitle">Java Developer</h4>
+                <h4 class="jobtitle">Technical Architect</h4>
                 <hr>
-                <p class="jobsummary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil cupiditate mollitia quasi expedita iste modi hic tempora accusamus earum quisquam quis nulla, recusandae obcaecati provident repudiandae beatae? Nobis, officiis, odio.</p>
-                <h3 class="jobsalary">$850 - $2000</h3>
+                  <ul class="skill">
+                    <li>Objective-C</li>
+                    <li>Swift</li>
+                    <li>Golang</li>
+                    <li>NodeJS</li>
+                    <li>PHP</li>
+                  </ul>
+                <p class="jobsummary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil cupiditate mollitia quasi expedita iste modi hic tempora accusamus earum quisquam quis nulla.</p>
+                <h3 class="jobsalary">negotiable</h3>
                 <a href="job-detail.html" class="btn btn-outline-primary">View detail</a>
               </div>
             </div>
@@ -151,10 +130,80 @@
           <div class="col-12 col-md-4">
             <div class="card jobcard">
               <div class="card-body">
-                <h4 class="jobtitle">Java Developer</h4>
+                <h4 class="jobtitle">Technical Architect</h4>
                 <hr>
-                <p class="jobsummary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil cupiditate mollitia quasi expedita iste modi hic tempora accusamus earum quisquam quis nulla, recusandae obcaecati provident repudiandae beatae? Nobis, officiis, odio.</p>
-                <h3 class="jobsalary">$850 - $2000</h3>
+                  <ul class="skill">
+                    <li>Objective-C</li>
+                    <li>Swift</li>
+                    <li>Golang</li>
+                    <li>NodeJS</li>
+                    <li>PHP</li>
+                  </ul>
+                <p class="jobsummary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil cupiditate mollitia quasi expedita iste modi hic tempora accusamus earum quisquam quis nulla.</p>
+                <h3 class="jobsalary">negotiable</h3>
+                <a href="job-detail.html" class="btn btn-outline-primary">View detail</a>
+              </div>
+            </div>
+          </div>
+          <!-- End of One Job Card -->
+
+          <!-- Start of One Job Card -->
+          <div class="col-12 col-md-4">
+            <div class="card jobcard">
+              <div class="card-body">
+                <h4 class="jobtitle">Technical Architect</h4>
+                <hr>
+                  <ul class="skill">
+                    <li>Objective-C</li>
+                    <li>Swift</li>
+                    <li>Golang</li>
+                    <li>NodeJS</li>
+                    <li>PHP</li>
+                  </ul>
+                <p class="jobsummary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil cupiditate mollitia quasi expedita iste modi hic tempora accusamus earum quisquam quis nulla.</p>
+                <h3 class="jobsalary">negotiable</h3>
+                <a href="job-detail.html" class="btn btn-outline-primary">View detail</a>
+              </div>
+            </div>
+          </div>
+          <!-- End of One Job Card -->
+
+          <!-- Start of One Job Card -->
+          <div class="col-12 col-md-4">
+            <div class="card jobcard">
+              <div class="card-body">
+                <h4 class="jobtitle">Technical Architect</h4>
+                <hr>
+                  <ul class="skill">
+                    <li>Objective-C</li>
+                    <li>Swift</li>
+                    <li>Golang</li>
+                    <li>NodeJS</li>
+                    <li>PHP</li>
+                  </ul>
+                <p class="jobsummary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil cupiditate mollitia quasi expedita iste modi hic tempora accusamus earum quisquam quis nulla.</p>
+                <h3 class="jobsalary">negotiable</h3>
+                <a href="job-detail.html" class="btn btn-outline-primary">View detail</a>
+              </div>
+            </div>
+          </div>
+          <!-- End of One Job Card -->
+
+          <!-- Start of One Job Card -->
+          <div class="col-12 col-md-4">
+            <div class="card jobcard">
+              <div class="card-body">
+                <h4 class="jobtitle">Technical Architect</h4>
+                <hr>
+                  <ul class="skill">
+                    <li>Objective-C</li>
+                    <li>Swift</li>
+                    <li>Golang</li>
+                    <li>NodeJS</li>
+                    <li>PHP</li>
+                  </ul>
+                <p class="jobsummary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil cupiditate mollitia quasi expedita iste modi hic tempora accusamus earum quisquam quis nulla.</p>
+                <h3 class="jobsalary">negotiable</h3>
                 <a href="job-detail.html" class="btn btn-outline-primary">View detail</a>
               </div>
             </div>
@@ -164,6 +213,7 @@
         </div>
 
         <hr>
+
         <h4><span class="underline">lead/senoir</span></h4>
         <div class="row">
 
@@ -171,10 +221,17 @@
           <div class="col-12 col-md-4">
             <div class="card jobcard">
               <div class="card-body">
-                <h4 class="jobtitle">Java Developer</h4>
+                <h4 class="jobtitle">Technical Architect</h4>
                 <hr>
-                <p class="jobsummary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil cupiditate mollitia quasi expedita iste modi hic tempora accusamus earum quisquam quis nulla, recusandae obcaecati provident repudiandae beatae? Nobis, officiis, odio.</p>
-                <h3 class="jobsalary">$850 - $2000</h3>
+                  <ul class="skill">
+                    <li>Objective-C</li>
+                    <li>Swift</li>
+                    <li>Golang</li>
+                    <li>NodeJS</li>
+                    <li>PHP</li>
+                  </ul>
+                <p class="jobsummary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil cupiditate mollitia quasi expedita iste modi hic tempora accusamus earum quisquam quis nulla.</p>
+                <h3 class="jobsalary">negotiable</h3>
                 <a href="job-detail.html" class="btn btn-outline-primary">View detail</a>
               </div>
             </div>
@@ -185,10 +242,17 @@
           <div class="col-12 col-md-4">
             <div class="card jobcard">
               <div class="card-body">
-                <h4 class="jobtitle">Java Developer</h4>
+                <h4 class="jobtitle">Technical Architect</h4>
                 <hr>
-                <p class="jobsummary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil cupiditate mollitia quasi expedita iste modi hic tempora accusamus earum quisquam quis nulla, recusandae obcaecati provident repudiandae beatae? Nobis, officiis, odio.</p>
-                <h3 class="jobsalary">$850 - $2000</h3>
+                  <ul class="skill">
+                    <li>Objective-C</li>
+                    <li>Swift</li>
+                    <li>Golang</li>
+                    <li>NodeJS</li>
+                    <li>PHP</li>
+                  </ul>
+                <p class="jobsummary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil cupiditate mollitia quasi expedita iste modi hic tempora accusamus earum quisquam quis nulla.</p>
+                <h3 class="jobsalary">negotiable</h3>
                 <a href="job-detail.html" class="btn btn-outline-primary">View detail</a>
               </div>
             </div>
@@ -199,16 +263,85 @@
           <div class="col-12 col-md-4">
             <div class="card jobcard">
               <div class="card-body">
-                <h4 class="jobtitle">Java Developer</h4>
+                <h4 class="jobtitle">Technical Architect</h4>
                 <hr>
-                <p class="jobsummary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil cupiditate mollitia quasi expedita iste modi hic tempora accusamus earum quisquam quis nulla, recusandae obcaecati provident repudiandae beatae? Nobis, officiis, odio.</p>
-                <h3 class="jobsalary">$850 - $2000</h3>
+                  <ul class="skill">
+                    <li>Objective-C</li>
+                    <li>Swift</li>
+                    <li>Golang</li>
+                    <li>NodeJS</li>
+                    <li>PHP</li>
+                  </ul>
+                <p class="jobsummary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil cupiditate mollitia quasi expedita iste modi hic tempora accusamus earum quisquam quis nulla.</p>
+                <h3 class="jobsalary">negotiable</h3>
                 <a href="job-detail.html" class="btn btn-outline-primary">View detail</a>
               </div>
             </div>
           </div>
           <!-- End of One Job Card -->
 
+          <!-- Start of One Job Card -->
+          <div class="col-12 col-md-4">
+            <div class="card jobcard">
+              <div class="card-body">
+                <h4 class="jobtitle">Technical Architect</h4>
+                <hr>
+                  <ul class="skill">
+                    <li>Objective-C</li>
+                    <li>Swift</li>
+                    <li>Golang</li>
+                    <li>NodeJS</li>
+                    <li>PHP</li>
+                  </ul>
+                <p class="jobsummary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil cupiditate mollitia quasi expedita iste modi hic tempora accusamus earum quisquam quis nulla.</p>
+                <h3 class="jobsalary">negotiable</h3>
+                <a href="job-detail.html" class="btn btn-outline-primary">View detail</a>
+              </div>
+            </div>
+          </div>
+          <!-- End of One Job Card -->
+
+          <!-- Start of One Job Card -->
+          <div class="col-12 col-md-4">
+            <div class="card jobcard">
+              <div class="card-body">
+                <h4 class="jobtitle">Technical Architect</h4>
+                <hr>
+                  <ul class="skill">
+                    <li>Objective-C</li>
+                    <li>Swift</li>
+                    <li>Golang</li>
+                    <li>NodeJS</li>
+                    <li>PHP</li>
+                  </ul>
+                <p class="jobsummary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil cupiditate mollitia quasi expedita iste modi hic tempora accusamus earum quisquam quis nulla.</p>
+                <h3 class="jobsalary">negotiable</h3>
+                <a href="job-detail.html" class="btn btn-outline-primary">View detail</a>
+              </div>
+            </div>
+          </div>
+          <!-- End of One Job Card -->
+
+          <!-- Start of One Job Card -->
+          <div class="col-12 col-md-4">
+            <div class="card jobcard">
+              <div class="card-body">
+                <h4 class="jobtitle">Technical Architect</h4>
+                <hr>
+                  <ul class="skill">
+                    <li>Objective-C</li>
+                    <li>Swift</li>
+                    <li>Golang</li>
+                    <li>NodeJS</li>
+                    <li>PHP</li>
+                  </ul>
+                <p class="jobsummary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil cupiditate mollitia quasi expedita iste modi hic tempora accusamus earum quisquam quis nulla.</p>
+                <h3 class="jobsalary">negotiable</h3>
+                <a href="job-detail.html" class="btn btn-outline-primary">View detail</a>
+              </div>
+            </div>
+          </div>
+          <!-- End of One Job Card -->
         </div>
 
         <a href="jobs.html" class="btn btn-outline-primary btn-more">view more in the job board</a>
@@ -274,6 +407,10 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <!-- Bootstrap JS -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/b0be376bb4.js" crossorigin="anonymous"></script>
+  <!-- Ghost Writer -->
+  <script src="js/ghost-typer.min.js"></script>
   <!-- Slick JS -->
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <!-- Main JS file -->

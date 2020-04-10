@@ -7,62 +7,44 @@
   background-color: #0056A4;
 }
 
-#home-carousel .slideshow {
+/* #home-carousel .slideshow {
   padding: 1rem 0;
-}
+} */
 
-#home-carousel .slick-dots {
-  position: relative;
-  bottom: 0;
-  padding: 1rem 0 0 0;
-}
-
-#home-carousel .slick-dotted.slick-slider {
-  margin-bottom: 0;
-}
-
-#home-carousel .slide .slidetext {
+#home-carousel .slidetext {
+  display: block;
+  color: #fff;
   text-align: center;
 }
 
-#home-carousel .slide .slidetext h2,
-#home-carousel .slide .slidetext p {
-  padding-bottom: 1rem;
+#home-carousel .slidetext h2,
+#home-carousel .slidetext p {
+  padding-bottom: 1.5rem;
 }
 
-#home-carousel .slide .slidetext h2 {
-  text-transform: uppercase;
-  color: #fff;
+#home-carousel .slidetext a {
+  margin: 0 auto;
 }
 
-#home-carousel .slide .slidetext p {
-  color: #fff;
+#home-carousel .slideshow img {
+  border-radius: 99rem;
 }
 
-#home-carousel .slide .slideimg {
+#home-carousel  .slideshow {
   display: none;
 }
 
 /* ============ For MD Screen + ============= */
 @media(min-width: 768px) {
 
-  #home-carousel .slideshow .slide .row {
-    display: flex;
-    align-items: center;
-  }
-
-  #home-carousel .slide .slidetext {
+  #home-carousel .slidetext {
     text-align: left;
   }
 
-  #home-carousel .slide .slideimg {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-  }
-
-  #home-carousel .slide .slideimg img {
-    border-radius: 99rem;
+  #home-carousel .slideshow {
+    display: block;
+    width: 90%;
+    height: auto;
   }
 }
 
@@ -164,7 +146,7 @@ form .form-check-input:checked + label {
   background: #0056A4;
   padding: 0.75rem 1.5rem;
   border-radius: 1rem;
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 3rem 0;
 }
 
 #job-content .jobdesc {
