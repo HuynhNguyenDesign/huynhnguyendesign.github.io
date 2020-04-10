@@ -141,12 +141,13 @@ form .form-check-input:checked + label {
 /* =====================================
 ============ Job Page Style ============
 ======================================== */
+
 #job-content .jobsum {
   color: #fff;
   background: #0056A4;
   padding: 0.75rem 1.5rem;
   border-radius: 1rem;
-  margin: 1.5rem 0 3rem 0;
+  padding-bottom: 1.5rem;
 }
 
 #job-content .jobdesc {
@@ -156,6 +157,10 @@ form .form-check-input:checked + label {
 #job-content .jobdesc h3,
 #job-content .jobsum h3 {
   padding: 0.75rem 0;
+}
+
+#job-content .jobsum .row div[class^="col"] p:first-child {
+  font-weight: 700;
 }
 
 /* ============ For MD Screen + ============= */
@@ -327,6 +332,15 @@ form label[class="form-check-label"] {
 
 #our-team img {
   border-radius: 1rem;
+}
+
+#our-team .memberlink {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#our-team .memberlink a {
+  margin: 0 0.75rem;
 }
 
 /* ============ For MD Screen - ============= */

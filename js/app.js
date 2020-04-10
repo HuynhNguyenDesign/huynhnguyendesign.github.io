@@ -6,7 +6,9 @@ var currentYear = (new Date).getFullYear();
 
 $(".copyyear").text(currentYear);
 
-$(window).bind("load", function(){
+$(window).on("load", function(){
+
+    $(".loader").addClass("loaded");
 
 
     $(".ghost").ghosttyper({
