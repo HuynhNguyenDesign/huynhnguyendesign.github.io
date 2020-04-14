@@ -121,10 +121,10 @@ main > section h6 {
 /* =====================================
 =========== Components Style ===========
 ======================================== */
-section .container,
+/* section .container,
 header .container {
   width: 1024px;
-}
+} */
 .hidden {
   display: none;
 }
