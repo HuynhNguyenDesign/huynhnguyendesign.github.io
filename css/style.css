@@ -762,14 +762,30 @@ form label[class="form-check-label"] {
   padding: 1.5rem 0;
 }
 
-#specialization .row img {
+/* #specialization .row img {
   display: block;
   width: 80%;
   border-radius: 50%;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   margin: 0 auto;
+} */
+
+#specialization .row .icon {
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
+
+#specialization .row .icon i {
+  color: #0056A4;
+  font-size: 5rem;
+}
+
+#specialization .row .icon-nontech i {
+  color: #0179E5;
+}
+
 
 /* =====================================
 ========== Why Choose Us Style =========
