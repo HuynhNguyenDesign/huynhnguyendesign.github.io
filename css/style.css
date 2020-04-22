@@ -526,7 +526,9 @@ footer section:last-child small {
 }
 
 #home-carousel .slideshow img {
-  border-radius: 99rem;
+  width: 500px;
+  height: 500px;
+  margin-left: auto;
 }
 
 #home-carousel  .slideshow {
@@ -542,7 +544,7 @@ footer section:last-child small {
 
   #home-carousel .slideshow {
     display: block;
-    width: 90%;
+    width: 100%;
     height: auto;
   }
 }
