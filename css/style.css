@@ -156,6 +156,7 @@ background-color: #0179E5;
 display:flex;
 justify-content: center;
 align-items: center;
+z-index: 2;
 }
 
 .loader.loaded {
@@ -325,7 +326,7 @@ header {
   position: sticky;
   top: 0px;
   left:0px;
-  z-index: 999;
+  z-index: 1;
 }
 
 /* .navbar {
