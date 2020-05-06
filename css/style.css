@@ -192,8 +192,12 @@ z-index: 999;
 }
 
 .jobcard .skill li {
-  display: inline;
-  margin: 0 0.325rem;
+  display: inline-block;
+  margin-right: 0.325rem;
+  margin-left: 0.325rem;
+  padding: 0.325rem 0.7rem;
+  border: 1px solid #0056A4;
+  border-radius: 5px;
 }
 
 .newscard {
@@ -210,6 +214,11 @@ z-index: 999;
 .newscard:active {
   border-color: #0179E5;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
+}
+
+.jobcard.featured:hover,
+.jobcard.featured:active {
+  border-color: #D65815;
 }
 
 .jobccard .card-body,
