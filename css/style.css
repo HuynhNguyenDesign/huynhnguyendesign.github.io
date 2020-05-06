@@ -570,7 +570,10 @@ footer section:last-child small {
 #job-search-result,
 #news-board {
   background-color: #fafafa;
+  min-height: 55vh;
 }
+
+
 
 /* =====================================
 =========== Job Search Form ============
