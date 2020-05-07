@@ -5,6 +5,7 @@ Tint Lv1: #0179E5;
 Primary color: #0056A4;
 Shade Lv1: #004685;
 Shade Lv2: #003666;
+Orange: #FD4F00;
 Black: #202020;
 Lightgrey: #FAFAFA;
 DarkGrey : #444444;
@@ -216,11 +217,6 @@ z-index: 999;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
 }
 
-.jobcard.featured:hover,
-.jobcard.featured:active {
-  border-color: #D65815;
-}
-
 .jobccard .card-body,
 .newscard .card-body, {
   padding: 1.5rem;
@@ -239,6 +235,19 @@ z-index: 999;
 
 .jobcard .jobtitle {
   padding-bottom: 0.325rem;
+}
+
+.jobcard .jobtitle.featured::before {
+  content: "Featured Job";
+  display: block;
+  width: 35%;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  background-color: #FD4F00;
+  margin: 0 auto 0.75rem auto;
+  padding: 0.325rem 0;
+  border-radius: 5px;
 }
 
 .jobcard .joblocation {
